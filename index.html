@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeTips Gallery | Showcasing Our Best Moments</title>
+    <link rel="stylesheet" href="static/styles.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./logo-ezgif.com-gif-maker.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://collegetips.in/images/logo.jpg" alt="" class="logo">
+                <span class="logo-text">CollegeTips.in</span>
+            </div>
+            <button class="theme-switch" id="theme-switch" aria-label="Toggle theme">
+                <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="gallery-header">
+            <h1 class="gallery-title">Our Moments</h1>
+            <p class="gallery-description">Explore our best moments and memories from the CollegeTips journey</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All Photos</button>
+            <button class="filter-btn" data-category="team-vibes">Team Vibes</button>
+            <button class="filter-btn" data-category="creative-campaigns">Creative Events</button>
+            <button class="filter-btn" data-category="work-hard-play-hard">How We Do it?</button>
+            <button class="filter-btn" data-category="behind-the-scenes">WorkPlace</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery"></div>
+
+    </main>
+    </main>
+
+    <div class="modal" id="modal">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <div class="modal-content">
+            <img class="modal-img" id="modal-img" src="" alt="">
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+
+    <!-- Separator -->
+    <section class="custom-separator">
+        <div class="line"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>© 2025 CollegeTips.in. All rights reserved.</p>
+            <p>Made with 💚 for the Web Development Project.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
